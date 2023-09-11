@@ -1,0 +1,17 @@
+body{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#myUserName{
+    display: inline;
+    text-align: center;
+    background-color: azure;
+    border-bottom: 2px solid black;
+}
+.myImg {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
