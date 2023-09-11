@@ -5,5 +5,8 @@ const CurrentDayIndex = CurrentDate.getDay();
 const CurrentdayName = Weekdays[CurrentDayIndex];
 Current_Day_Element.textContent = `${CurrentdayName}`;
 const currentTime = document.querySelector('[data-testid="currentUTCTime"]');
-currentTimeMs = new Date().getTime();
-currentTime.textContent = `${currentTimeMs}`;
+const updateTime = () => {
+    currentTimeMs = new Date().getTime();
+    currentTime.textContent = `${currentTimeMs}`;
+}
+setInterval(updateTime,1);
